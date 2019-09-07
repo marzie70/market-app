@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="market_entity.Item">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="market_entity.Order">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAAAEAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="market_entity.OrderItem">
+    <Position X="9.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAADAAAAAAAAAAAAAAAAAAAEAAAASAAAAAAAgAAAAAA=</HashCode>
+      <FileName>OrderItem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Item" />
+      <Property Name="Rack" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="market_entity.PurchaseOrder">
+    <Position X="7" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PurchaseOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="market_entity.Rack">
+    <Position X="0.75" Y="3" Width="1.5" />
+    <AssociationLine Name="Rack" Type="market_entity.Rack" ManuallyRouted="true">
+      <Path>
+        <Point X="1.282" Y="3" />
+        <Point X="1.282" Y="2.75" />
+        <Point X="1.728" Y="2.75" />
+        <Point X="1.728" Y="3" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAAAAIAAQAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Rack.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Rack" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="market_entity.RackItemLevel">
+    <Position X="4.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>RackItemLevel.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Item" />
+      <Property Name="Rack" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="market_entity.SaleOrder">
+    <Position X="12" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SaleOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="market_entity.Unit">
+    <Position X="11.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAEAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+      <FileName>Item.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
